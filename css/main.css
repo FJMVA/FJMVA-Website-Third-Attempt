@@ -16,6 +16,16 @@ section{
   padding-bottom:50px; 
   min-height:calc(100% - 1px);
 }
+.carousel-inner > .item > img{
+  max-height:calc(100% - 1px);
+
+}
+/*.carousel-inner{
+  background-color: floralwhite;
+}*/
+/*.hr{
+       max-height:calc(100% - 1px);}*/
+
 /**********************************
 NAV
 ***********************************/
@@ -298,7 +308,8 @@ FOOTER
 }
 footer{
   padding-top: 6px;
-  background-color: floralwhite;
+  /*padding-bottom: 1px;*/
+  /*background-color: floralwhite;*/
 }
 
 
