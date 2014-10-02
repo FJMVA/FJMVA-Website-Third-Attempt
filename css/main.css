@@ -1,0 +1,317 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+html,body{
+  height:100%;
+}
+body{
+	padding-top: 50px;
+	font-family: 'Lustria', serif;
+}
+
+.page-header{
+	border: none;
+}
+
+section{
+  padding-top:70px;  
+  padding-bottom:50px; 
+  min-height:calc(100% - 1px);
+}
+/**********************************
+NAV
+***********************************/
+
+
+
+.navbar-fjmva {
+  background-color: #f96e5b;
+  border-color: #e7e7e7;
+}
+.navbar-fjmva .navbar-brand {
+  color: white;
+  font-family: 'Bitter', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.navbar-fjmva .navbar-brand:hover,
+.navbar-fjmva .navbar-brand:focus {
+  color: #333;
+  background-color: transparent;
+}
+/*.navbar-fjmva .navbar-text {
+  color: white;
+}*/
+.navbar-fjmva .navbar-nav > li > a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.navbar-fjmva .navbar-nav > li > a:hover,
+.navbar-fjmva .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+.navbar-fjmva .navbar-nav > .active > a,
+.navbar-fjmva .navbar-nav > .active > a:hover,
+.navbar-fjmva .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: floralwhite; /*box on active link*/
+}
+.navbar-fjmva .navbar-nav > .disabled > a,
+.navbar-fjmva .navbar-nav > .disabled > a:hover,
+.navbar-fjmva .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-fjmva .navbar-toggle {
+  border-color: #f96e5b; /*color of toggle border*/
+}
+.navbar-fjmva .navbar-toggle:hover,
+.navbar-fjmva .navbar-toggle:focus {
+ /* background-color: black;*/   /*toggle hover color*/
+}
+.navbar-fjmva .navbar-toggle .icon-bar {
+  background-color: floralwhite;
+}
+.navbar-fjmva .navbar-collapse,
+.navbar-fjmva .navbar-form {
+  border-color: floralwhite;  /*#e7e7e7*/
+}
+.navbar-fjmva .navbar-nav > .open > a,
+.navbar-fjmva .navbar-nav > .open > a:hover,
+.navbar-fjmva .navbar-nav > .open > a:focus {
+  color: black; /*#555*/
+  background-color: floralwhite; /*e7e7e7*/
+}
+
+/*
+@media (max-width: 767px) {
+  .navbar-fjmva .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+  }
+  .navbar-fjmva .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-fjmva .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-fjmva .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-fjmva .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-fjmva .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: black; //#555
+    background-color: floralwhite;  //#e7e7e7
+  }
+  .navbar-fjmva .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-fjmva .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-fjmva .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+*/
+
+/*
+.navbar-fjmva .navbar-link {
+  color: white;
+}
+.navbar-fjmva .navbar-link:hover {
+  color: #333;
+}
+.navbar-fjmva .btn-link {
+  color: white;
+}
+.navbar-fjmva .btn-link:hover,
+.navbar-fjmva .btn-link:focus {
+  color: #333;
+}
+.navbar-fjmva .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-fjmva .btn-link:hover,
+.navbar-fjmva .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-fjmva .btn-link:focus {
+  color: #ccc;
+}
+
+*/
+
+/**********************************
+HEADER/HOME
+***********************************/
+h1{
+  font-family: 'Bitter', serif;
+  font-style: italic;
+  font-size: 3.9375em; 
+}
+.who-am-i {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.profile-photo {
+    max-width: 300px;
+    margin: 30px 0;
+    border-radius: 100%;    
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+/*#top-page{
+  background-color: linen;
+}*/
+ #bg {
+  background-image: url('../img/glossycyan.png');
+  width: 100%;
+  top: 0;
+  left: 0;
+  height:100%; 
+  opacity: 1;
+  position: fixed;
+  /*background-repeat: repeat-y;*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0;
+  margin: 0;
+  z-index:-1;
+}
+ #bg2 {
+  background-image: url('../img/halfhalf.png');
+  width: 100%;
+  top: 0;
+  left: 0;
+  height:100%; 
+  opacity: 0.8;
+  position: fixed;
+  /*background-repeat: repeat-y;*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0;
+  margin: 0;
+  z-index:-1;
+}
+
+/**********************************
+ABOUT
+***********************************/
+#section-expertise{
+  background: floralwhite;
+}
+
+.what-i-do p {
+  font-size: 1.3em;
+}
+
+.photography:before{
+  content:url('../img/icon-lens.png'); 
+  margin-right:3%;
+}
+.graphics:before{
+  content:url('../img/icon-pencil.png'); 
+  margin-right:3%;
+}
+.develop:before{
+  content:url('../img/icon-html.png'); 
+  margin-right:3%;
+}
+
+.expertise-container{
+  position:relative; 
+}
+section.expertise-container .row{
+  font-size: 1.2em;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+
+
+
+/**********************************
+SKILLS
+***********************************/
+
+/*#section-skills{
+  background: linen;
+}*/
+.programming p{
+	text-align: right;
+	margin-right: 8px;
+  font-size: 2em;
+}
+.design p{
+	margin-left: 8px;
+  font-size: 2em;
+}
+.skills-container{
+  position:relative; 
+}
+section.skills-container .row{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+/**********************************
+PORTFOLIO
+***********************************/
+#section-portfolio{
+  background: floralwhite;
+}
+.galleria{
+  width: 100%; height: 600px; background: linen;
+}
+/**********************************
+CONTACT
+***********************************/
+/*#section-contact{
+  background: linen;
+}*/
+.contact-container{
+  position:relative; 
+}
+section.contact-container address{
+  font-size: 1.5em;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+/**********************************
+FOOTER
+***********************************/
+.social-icons li{
+	display: inline-block;
+}
+footer{
+  padding-top: 6px;
+  background-color: floralwhite;
+}
+
+
+@media (min-width: 768px){
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+}
+@media (max-width: 991px){
+  section.expertise-container .row{
+    font-size: 0.8em;
+  }
+}
