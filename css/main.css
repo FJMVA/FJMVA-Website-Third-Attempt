@@ -20,11 +20,10 @@ section{
   max-height:calc(100% - 1px);
 
 }
-/*.carousel-inner{
-  background-color: floralwhite;
+/*.wrapper{
+  max-width: 1500px;
 }*/
-/*.hr{
-       max-height:calc(100% - 1px);}*/
+
 
 /**********************************
 NAV
@@ -94,6 +93,35 @@ NAV
 .navbar-fjmva .navbar-nav > .open > a:focus {
   color: black; /*#555*/
   background-color: floralwhite; /*e7e7e7*/
+}
+
+
+
+#navcollapse ul li a{
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+#navcollapse ul li a:hover:before {
+  width: 100%;
+}
+#navcollapse ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
 }
 
 /*
@@ -228,16 +256,12 @@ ABOUT
 }
 
 .expertise-container{
-  position:relative; 
+/* min-height:calc(40% - 1px);*/
 }
 section.expertise-container .row{
-  font-size: 1.2em;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+  /*background-color: blue;*/
+  padding-top: 17%;
+
 }
 
 
@@ -250,6 +274,7 @@ SKILLS
 
 /*#section-skills{
   background: linen;
+  z-index: 10;
 }*/
 .programming p{
 	text-align: right;
@@ -260,16 +285,11 @@ SKILLS
 	margin-left: 8px;
   font-size: 2em;
 }
-.skills-container{
+/*.skills-container{
   position:relative; 
-}
+}*/
 section.skills-container .row{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+padding-top: 16%;
 }
 
 /**********************************
@@ -287,17 +307,12 @@ CONTACT
 /*#section-contact{
   background: linen;
 }*/
-.contact-container{
+/*.contact-container{
   position:relative; 
-}
+}*/
 section.contact-container address{
   font-size: 1.5em;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+  padding-top: 13%;
 }
 
 /**********************************
