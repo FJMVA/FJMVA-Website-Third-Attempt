@@ -1,14 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 html,body{
   height:100%;
 }
 body{
-	padding-top: 50px;
+/*	padding-top: 50px;*/
 	font-family: 'Lustria', serif;
+  background-color: black;
+  color: white;
 }
-
-.page-header{
-	border: none;
+body p{
+  font-size: 1.1em;
 }
 
 section{
@@ -16,23 +16,29 @@ section{
   padding-bottom:50px; 
   min-height:calc(100% - 1px);
 }
-.carousel-inner > .item > img{
-  max-height:calc(100% - 1px);
-
-}
-/*.wrapper{
-  max-width: 1500px;
+/*section{
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
 }*/
 
-
+hr{
+  height: 0.188em;
+  background: white;
+  width: 3.125em;
+}
+.visible{
+display: block;
+}
+.invisible{
+display: none;
+}
 /**********************************
 NAV
 ***********************************/
-
-
-
 .navbar-fjmva {
-  background-color: #f96e5b;
+  background-color: transparent;
   border-color: #e7e7e7;
 }
 .navbar-fjmva .navbar-brand {
@@ -59,7 +65,7 @@ NAV
 }
 .navbar-fjmva .navbar-nav > li > a:hover,
 .navbar-fjmva .navbar-nav > li > a:focus {
-  color: #333;
+  color: black;
   background-color: transparent;
 }
 .navbar-fjmva .navbar-nav > .active > a,
@@ -95,8 +101,6 @@ NAV
   background-color: floralwhite; /*e7e7e7*/
 }
 
-
-
 #navcollapse ul li a{
   -webkit-transition: color .25s;
   -moz-transition: color .25s;
@@ -116,204 +120,42 @@ NAV
   bottom: 0;
   height: 3px;
   width: 0;
-  background: #333333;
+  background: floralwhite;
   -webkit-transition: width .25s;
   -moz-transition: width .25s;
   -ms-transition: width .25s;
   -o-transition: width .25s;
   transition: width .25s;
 }
-
-/*
-@media (max-width: 767px) {
-  .navbar-fjmva .navbar-nav .open .dropdown-menu > li > a {
-    color: white;
-  }
-  .navbar-fjmva .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-fjmva .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
-    background-color: transparent;
-  }
-  .navbar-fjmva .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-fjmva .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-fjmva .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: black; //#555
-    background-color: floralwhite;  //#e7e7e7
-  }
-  .navbar-fjmva .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-fjmva .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-fjmva .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #ccc;
-    background-color: transparent;
-  }
-}
-*/
-
-/*
-.navbar-fjmva .navbar-link {
-  color: white;
-}
-.navbar-fjmva .navbar-link:hover {
-  color: #333;
-}
-.navbar-fjmva .btn-link {
-  color: white;
-}
-.navbar-fjmva .btn-link:hover,
-.navbar-fjmva .btn-link:focus {
-  color: #333;
-}
-.navbar-fjmva .btn-link[disabled]:hover,
-fieldset[disabled] .navbar-fjmva .btn-link:hover,
-.navbar-fjmva .btn-link[disabled]:focus,
-fieldset[disabled] .navbar-fjmva .btn-link:focus {
-  color: #ccc;
-}
-
-*/
-
-/**********************************
-HEADER/HOME
-***********************************/
-h1{
-  font-family: 'Bitter', serif;
-  font-style: italic;
-  font-size: 3.9375em; 
-}
-.who-am-i {
-  margin-bottom: 15px;
-  font-size: 1.5em;
-  font-weight: 200;
-}
-
-.profile-photo {
-    max-width: 300px;
-    margin: 30px 0;
-    border-radius: 100%;    
-}
-.center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- }
-
-/*#top-page{
-  background-color: linen;
-}*/
- #bg {
-  background-image: url('../img/glossycyan.png');
-  width: 100%;
-  top: 0;
-  left: 0;
-  height:100%; 
-  opacity: 1;
-  position: fixed;
-  /*background-repeat: repeat-y;*/
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 0;
-  margin: 0;
-  z-index:-1;
-}
- #bg2 {
-  background-image: url('../img/halfhalf.png');
-  width: 100%;
-  top: 0;
-  left: 0;
-  height:100%; 
-  opacity: 0.8;
-  position: fixed;
-  /*background-repeat: repeat-y;*/
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  padding: 0;
-  margin: 0;
-  z-index:-1;
-}
-
 /**********************************
 ABOUT
 ***********************************/
-#section-expertise{
-  background: floralwhite;
+.description{
+  text-align: center;
+  margin: 0 100px;
 }
-
-.what-i-do p {
-  font-size: 1.3em;
+.glyph{
+  max-width: 50%;
+  height: auto;
 }
-
-.photography:before{
-  content:url('../img/icon-lens.png'); 
-  margin-right:3%;
-}
-.graphics:before{
-  content:url('../img/icon-pencil.png'); 
-  margin-right:3%;
-}
-.develop:before{
-  content:url('../img/icon-html.png'); 
-  margin-right:3%;
-}
-
-.expertise-container{
-/* min-height:calc(40% - 1px);*/
-}
-section.expertise-container .row{
-  /*background-color: blue;*/
-  padding-top: 17%;
-
-}
-
-
-
-
 
 /**********************************
 SKILLS
 ***********************************/
 
-/*#section-skills{
-  background: linen;
-  z-index: 10;
-}*/
-.programming p{
-	text-align: right;
-	margin-right: 8px;
-  font-size: 2em;
-}
-.design p{
-	margin-left: 8px;
-  font-size: 2em;
-}
-/*.skills-container{
-  position:relative; 
-}*/
-section.skills-container .row{
-padding-top: 16%;
-}
-
 /**********************************
 PORTFOLIO
 ***********************************/
-#section-portfolio{
-  background: floralwhite;
-}
+
 .galleria{
-  width: 100%; height: 600px; background: linen;
+  width: 100%; height: 600px; background:none;
 }
+
 /**********************************
 CONTACT
 ***********************************/
-/*#section-contact{
-  background: linen;
-}*/
-/*.contact-container{
-  position:relative; 
-}*/
-section.contact-container address{
-  font-size: 1.5em;
-  padding-top: 13%;
-}
+
+
 
 /**********************************
 FOOTER
@@ -322,9 +164,8 @@ FOOTER
 	display: inline-block;
 }
 footer{
+  margin-top: -60px;
   padding-top: 6px;
-  /*padding-bottom: 1px;*/
-  /*background-color: floralwhite;*/
 }
 
 
@@ -337,7 +178,12 @@ footer{
 }
 }
 @media (max-width: 991px){
-  section.expertise-container .row{
-    font-size: 0.8em;
+  body p{
+    font-size: 1em;
+  }
+  .description{
+    margin: 0 0;
   }
 }
+
+

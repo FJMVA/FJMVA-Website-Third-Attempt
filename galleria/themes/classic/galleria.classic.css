@@ -5,7 +5,6 @@
 .galleria-theme-classic {
     position: relative;
     overflow: hidden;
-    background: floralwhite;
 }
 .galleria-theme-classic img {
     -moz-user-select: none;
@@ -19,6 +18,7 @@
     left: 10px;
     right: 10px;
     overflow:hidden;
+
 }
 .galleria-theme-classic .galleria-thumbnails-container {
     height: 50px;
@@ -46,7 +46,7 @@
     bottom: 10px;
     left: 10px;
     text-align: right;
-    color: #000;
+    color: #FFF;
     font: normal 11px/1 arial,sans-serif;
     z-index: 1;
 }

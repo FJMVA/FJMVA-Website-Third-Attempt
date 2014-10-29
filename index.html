@@ -8,26 +8,47 @@
 		<link rel="icon" type="image/x-icon" href="img/cameraicon.ico" />
 
 		<!-- Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' type='text/css'>
-
+		
 		<!-- Stylesheets -->
-		<link rel="stylesheet" href="css/normalize.css">
 		<!-- Bootstrap Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 		<!-- Bootstrap Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="css/main.css">
+		<!-- <link rel="stylesheet" href="galleria/themes/classic/galleria.classic.css"> -->
+		<link type="text/css" rel="stylesheet" href="galleria/themes/classic/galleria.classic.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+		<script 
+		  type="text/javascript"
+		  src="vegas/jquery.vegas.js">
+		</script>
+
+		<link 
+		  rel="stylesheet" 
+		  type="text/css" 
+		  href="vegas/jquery.vegas.css" />
+
+		<link rel="stylesheet" href="css/main.css">
+		
+	
 		<script src="galleria/galleria-1.4.2.min.js"></script>
+		<script>
+			$.vegas('slideshow', {
+			  delay:10000,
+			  backgrounds:[
+			    { src:'vegas/images/blancsurblanc2.png', fade:5000 },
+			    { src:'vegas/images/blancsurblanc3.png', fade:5000 }  
+			  ]
+			});
+
+			$.vegas('overlay');
+		</script>
 	</head>
 
 	<body data-spy="scroll" data-target="#main-navbar">
 		<header>
 			<!-- Navigation -->
-						<nav class="navbar navbar-fjmva navbar-fixed-top" id="main-navbar" role = "navigation">
+						<nav class="navbar navbar-fjmva navbar-fixed-bottom" id="main-navbar" role = "navigation">
 						    <div class="container-fluid">
 						        <!-- Brand and toggle get grouped for better mobile display -->
 						        <div class="navbar-header">
@@ -42,24 +63,15 @@
 
 						        <!-- Collect the nav links, forms, and other content for toggling -->
 						        <div class="collapse navbar-collapse" id="navcollapse">
-						            <ul class="nav navbar-nav">
+						            <ul class="nav navbar-nav navbar-right">
+						                <li class = "active">
+						                    <a href="#about">About</a>
+						                </li>					       
 						                <li>
-						                    <a href="#section-expertise">About</a>
+						                    <a href="#portfolio">Portfolio </a>
 						                </li>
 						                <li>
-						                    <a href="#section-skills">Skills</a>
-						                </li>						       
-						                <li>
-						                    <a href="#section-portfolio">Photography</a>
-						                </li>
-						                <li class="active">
-						                    <a href="#top-page" class ="active">Home</a>
-						                </li>
-						                <li>
-						                    <a href="#section-graphics">Graphics &amp; Design</a>
-						                </li>
-						                <li>
-						                    <a href="#section-contact">Contact</a>
+						                    <a href="#contact">Contact</a>
 						                </li>
 						            </ul>
 						        </div>
@@ -71,70 +83,37 @@
 
 
 	
-		<section  id="top-page" class="home-img">
-			<div id="bg"></div>
-			<div id="bg2"></div>
-			<div class="container text-center homepage">
-				<h1>Precisely what you imagined! or even better! I create ideas to make you visionary!</h1>
-				<div class="row col-md-12">
-					<img src="img/profile-pic.png" alt="Photograph of Frederick Mfinanga" class="profile-photo center-block img-responsive">
-				</div>
-				
-				<p class="who-am-i">This is the portfolio of Frederick Mfinanga, graduate in Computer Engineering from McGill University. He is a young creative business minded individual with endless passion for innovation, entrepreneurship, art and design! His photography work has been featured in Bisous Magazine, Elegant Magazine, Flawless Magazine, HUF Magazine, KIKAPU and several other international publications.</p>
-			</div>
-		</section>
-		
-		<section class="container-fluid expertise-container" id="section-expertise">
-			
-				<!-- <div class="page-header" >
-					
-				</div> -->
+		<section  id="about" class = "container visible">
+			<div>
+				<h1 class= "text-center">ABOUT</h1>
+				<hr>
+				<p class="description">Frederick Mfinanga currently resides in Montreal, QC. He is a young creative business minded individual with endless passion for innovation, entrepreneurship, fashion, art and design! He currently resides in Montreal, QC where he spends most of his free time designing and creating ideas that are visually appealing and emotionally satisfying. He’s a graphic designer, front-end developer and fashion photographer. Photography is an outlet where he uses the fundamental elements of design to capture scenes and moments that will live forever. The idea of being able to control color and light to set the tone/mood of an image is what intrigues him the most. His photography work has been featured in Bisous Magazine, Elegant Magazine, Flawless Magazine, HUF Magazine, KIKAPU and several other international publications.
+				</p>
+				</br>
 				<div class="row">
-					<div class="col-md-4 what-i-do text-center">
+					<div class="col-md-4 text-center">
+						<img src="img/camera.png" alt="" class="center-block img-responsive glyph">
 						<h2 class="photography">PHOTOGRAPHY</h2>
 						<p>With a passion for fashion, Frederick Mfinanga is self-motivated to continuosly re-invent himself, follow up on trends and ensure he's producing top quality work.
 						</p>
 					</div>
-					<div class="col-md-4 what-i-do text-center">
+					<div class="col-md-4 text-center">
+						<img src="img/tools.png" alt="" class="center-block img-responsive glyph">
 						<h2 class="graphics">DESIGN</h2>
 						<p>Frederick Mfinanga creates top-notch graphic designs adhering to UX best practices and by studying results with measurable analytics.</p>
 					</div>
-					<div class="col-md-4 what-i-do text-center">
+					<div class="col-md-4  text-center">
+						<img src="img/mobile.png" alt="" class="center-block img-responsive glyph">
 						<h2 class="develop">FRONT-END DEVELOPER</h2>
 						<p>No user is left behind. Frederick's websites work across all devices. Each is optimally designed for desktop, tablet, and mobile.</p>
 					</div>
-				</div>
-			
-		</section>
-
-
-		<section class="container-fluid skills-container bg" id="section-skills">
-			<div class="row">
-				<div class="col-xs-6 programming">
-					<p>HTML5</p>
-					<p>Javascript</p>
-					<p>JQuery</p>
-					<p>Java</p>
-					<p>C</p>
-				</div>
-				<div class="col-xs-6 design">
-					<p>CSS3</p>
-					<!-- <p>Web-Design</p> -->
-					<p>Photoshop</p>
-					<p>Illustrator</p>
-					<p>Wordpress</p>
-					<p>Bootstrap</p>
-				</div>
+				</div>	
 			</div>
 		</section>
-		
 
-		<!-- <div class="page-header" id="section-portfolio">
-			
-		</div> -->
-
-
-		<section class="container-fluid" id="section-portfolio">
+		<section class="container invisible" id="portfolio">
+			<h1 class= "text-center">PORTFOLIO</h1>
+			<hr>
 			<div class="galleria">
 				  <img src="img/blancsurblanc1.png">
 				  <img src="img/blancsurblanc2.png">
@@ -166,61 +145,18 @@
 			</div>
 			<script>
 			  Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
-				  Galleria.run('.galleria');
+				  Galleria.run('.galleria',{
+				  	wait:true
+				  });
 			</script>
 		</section>
 		
 
-		<section class="container-fluid" id="section-graphics">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
-			  </ol>
-			 
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-			    <div class="item active">
-			      <img class = "center-block" src="img/Aliegelogo.jpg" alt="...">
-			      <div class="carousel-caption">
-			          <h3>ALIEGE LOGO</h3>
-			      </div>
-			    </div>
-			    <div class="item">
-			      <img class = "center-block" src="img/1.png" alt="...">
-			      <div class="carousel-caption">
-			          <h3>ALIEGE DESIGN</h3>
-			      </div>
-			    </div>
-			    <!-- <div class="item">
-			      <img class = "center-block" src="img/aliegehat.png" alt="...">
-			      <div class="carousel-caption">
-			          <h3>ALIEGE HAT DESIGN</h3>
-			      </div>
-			    </div> -->
-			    <!-- <div class="item">
-			      <img src="img/1.png" alt="...">
-			      <div class="carousel-caption">
-			          <h3>ALIEGE DESIGN</h3>
-			      </div>
-			    </div> -->
-			  </div>
-			 
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left"></span>
-			  </a>
-			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right"></span>
-			  </a>
-			</div> <!-- Carousel -->
-		</section>
-
-		<section class="container-fluid text-center contact-container " id="section-contact">
+		<section class="container text-center invisible" id="contact">
+			<h1 class= "text-center">GET IN TOUCH</h1>
+				<hr>
 			<address>
-				<h1>GET IN TOUCH</h1>
+				
 				<!-- <p><i>Feel free to email me or drop me a line on Twitter</i></p> -->
 				<strong>Frederick Mfinanga</strong><br>
 				1430 Rue City Councillors<br>
@@ -232,7 +168,7 @@
 		</section>
 
 
-		<footer>
+		<!-- <footer>
 			<ul class="social-icons list-unstyled text-center">
 			  <li><img src = "img/linked_in.png"></li>
 			  <li><img src = "img/dribbble.png"></li>
@@ -242,7 +178,7 @@
 			  <li><img src = "img/twitter.png"></li>	  
 			</ul>
 			<p class="text-center">&copy; 2014 FJMVA. All rights reserved</p>
-		</footer>
+		</footer> -->
 		<!--  JQuery -->
 		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -255,5 +191,36 @@
 		  });
 		});
 		</script>
+
+
+		<script>
+			$( '.navbar-nav li a' ).click(function() {
+				// console.log("yessssss!");
+				var link = jQuery(this).attr('href').substr(1);
+				jQuery("#"+link+"").removeClass( "invisible" ).addClass("visibile");
+
+				var myPages = [ "about", "portfolio","contact" ];
+				for ( var i = 0; i < myPages.length; i++ ) {
+					if(!(link === myPages[i])){
+						$("#"+myPages[i]+"").removeClass("visible").addClass("invisible");
+					}
+				}
+
+
+			  
+			});
+
+		</script>
+			<script>
+			$( '.navbar-nav li' ).click(function() {
+				 // console.log("yessssss!");
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active"); 
+			});
+
+		</script>
+		
+		
+
 	</body>
 </html>
