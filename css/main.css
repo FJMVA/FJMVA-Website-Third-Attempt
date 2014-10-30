@@ -152,9 +152,8 @@ PORTFOLIO
 }
 
 /**********************************
-CONTACT
+SOCIAL NAV
 ***********************************/
-
 
 
 /**********************************
@@ -186,4 +185,13 @@ footer{
   }
 }
 
+h1,h2{
+  color: Wheat;
+}
 
+#home ul li {
+/*  list-style: none;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 200px;*/
+}

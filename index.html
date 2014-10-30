@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="utf-8">
-		<title>FJMVA</title>
+		<title>FJMVA - Photographer | Graphic Designer | Front-End Developer</title>
 		<meta name="description" content="This is a photography portfolio website for Frederick Mfinanga.">
 		<meta name="keywords" content="photography, fashion, beauty, editorial">
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-		<link rel="icon" type="image/x-icon" href="img/cameraicon.ico" />
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 
 		<!-- Fonts -->
 		
@@ -66,8 +66,11 @@
 						        <!-- Collect the nav links, forms, and other content for toggling -->
 						        <div class="collapse navbar-collapse" id="navcollapse">
 						            <ul class="nav navbar-nav navbar-right">
-						                <li class = "active">
+						                <li>
 						                    <a href="#about">About</a>
+						                </li>
+						                <li>
+						                    <a href="#services">Services</a>
 						                </li>					       
 						                <li>
 						                    <a href="#portfolio">Portfolio </a>
@@ -85,26 +88,55 @@
 
 
 	
-		<section  id="about" class = "container visible">
+			<section id="home" class = "container visible">
+				<div class="row">
+					<div class="col-md-3 text-center">
+				        <a href="#about"><img src="img/profile-male.png"/></a>
+				        <h3>ABOUT</h3>
+				    </div>
+				    <div class="col-md-3 text-center">
+				        <a href="#services"><img src="img/briefcase.png"/></a>
+				         <h3>SERVICES</h3>
+				    </div>					       
+				    <div class="col-md-3 text-center">
+				        <a href="#portfolio"><img src="img/paintbrush.png"/></a>
+				         <h3>PORTFOLIO</h3>
+				    </div>
+				   <div class="col-md-3 text-center">
+				        <a href="#contact"><img src="img/envelope.png"/></a>
+				         <h3>CONTACT</h3>
+				    </div>
+				</div>
+			</section>
+		
+
+
+		<section  id="about" class = "container invisible">
 			<div>
 				<h1 class= "text-center">ABOUT</h1>
 				<hr>
-				<p class="description">Frederick Mfinanga currently resides in Montreal, QC. He is a young creative business minded individual with endless passion for innovation, entrepreneurship, fashion, art and design! He currently resides in Montreal, QC where he spends most of his free time designing and creating ideas that are visually appealing and emotionally satisfying. He’s a graphic designer, front-end developer and fashion photographer. Photography is an outlet where he uses the fundamental elements of design to capture scenes and moments that will live forever. The idea of being able to control color and light to set the tone/mood of an image is what intrigues him the most. His photography work has been featured in Bisous Magazine, Elegant Magazine, Flawless Magazine, HUF Magazine, KIKAPU and several other international publications.
-				</p>
-				</br>
+				<p class="description">Frederick Mfinanga is a young creative business minded individual with endless passion for innovation, entrepreneurship, fashion, art and design! He currently resides in Montreal, QC where he spends most of his free time designing and creating ideas that are visually appealing and emotionally satisfying. He’s a graphic designer, front-end developer and fashion photographer. Photography is an outlet where he uses the fundamental elements of design to capture scenes and moments that will live forever. The idea of being able to control color and light to set the tone/mood of an image is what intrigues him the most. His photography work has been featured in Bisous Magazine, Elegant Magazine, Flawless Magazine, HUF Magazine, KIKAPU and several other international publications.
+				</p>	
+			</div>
+		</section>
+
+		<section  id="services" class = "container invisible">
+			<div>
+				<h1 class= "text-center">SERVICES</h1>
+				<hr>
 				<div class="row">
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center" id = "photo-col">
 						<img src="img/camera.png" alt="" class="center-block img-responsive glyph">
 						<h2 class="photography">PHOTOGRAPHY</h2>
 						<p>With a passion for fashion, Frederick Mfinanga is self-motivated to continuosly re-invent himself, follow up on trends and ensure he's producing top quality work.
 						</p>
 					</div>
-					<div class="col-md-4 text-center">
+					<div class="col-md-4 text-center" id = "design-col">
 						<img src="img/tools.png" alt="" class="center-block img-responsive glyph">
 						<h2 class="graphics">DESIGN</h2>
 						<p>Frederick Mfinanga creates top-notch graphic designs adhering to UX best practices and by studying results with measurable analytics.</p>
 					</div>
-					<div class="col-md-4  text-center">
+					<div class="col-md-4 text-center" id = "develop-col">
 						<img src="img/mobile.png" alt="" class="center-block img-responsive glyph">
 						<h2 class="develop">FRONT-END DEVELOPER</h2>
 						<p>No user is left behind. Frederick's websites work across all devices. Each is optimally designed for desktop, tablet, and mobile.</p>
@@ -124,6 +156,18 @@
 				  <img src="img/blancsurblanc5.jpg">
 				  <img src="img/blancsurblanc6.jpg">
 				  <img src="img/blancsurblanc7.jpg">
+				  <img src="img/audrey1.png">
+				  <img src="img/audrey2.png">
+				  <img src="img/vfranz2.png">
+				  <img src="img/vfranz3.png">
+				  <img src="img/cath1.png">
+				  <img src="img/cath2.png">
+				  <img src="img/maria1.png">
+				  <img src="img/maria2.png">
+				  <img src="img/maria3.png">			
+				  <img src="img/sarah2.png">
+				  <img src="img/sarah3.png">
+			
 			
 
 
@@ -177,23 +221,57 @@
 		  });
 		});
 		</script>
+		
+
+
+
+		<!-- show and hide home page -->
+		<script>
+			if($("#home").hasClass("visible")){
+				console.log("yessssss!");
+				// $("nav li").first().nextAll().hide();
+				$("nav").hide().animate({'opacity' : 0}, {queue: false, duration: 1000});
+			}
+
+			$( "#home a" ).click(function() {
+				console.log("yessssss!");
+				 $("nav").show().animate({'opacity' : 1}, {queue: false, duration: 1000});
+				 $("#home").hide();
+			});
+		</script>
+
+
+
 
 
 		<script>
 			$( '.navbar-nav li a' ).click(function() {
-				// console.log("yessssss!");
 				var link = jQuery(this).attr('href').substr(1);
-				jQuery("#"+link+"").removeClass( "invisible" ).addClass("visibile");
+				jQuery("#"+link+"").removeClass( "invisible" ).addClass("visibile").animate({'opacity' : 1}, {queue: false, duration: 1000});
 
-				var myPages = [ "about", "portfolio","contact" ];
+				var myPages = [ "about","services", "portfolio","contact" ];
 				for ( var i = 0; i < myPages.length; i++ ) {
 					if(!(link === myPages[i])){
-						$("#"+myPages[i]+"").removeClass("visible").addClass("invisible");
+						$("#"+myPages[i]+"").removeClass("visible").addClass("invisible").animate({'opacity' : 0}, {queue: false, duration: 1000});
 					}
 				}
+				if(link === "services"){
+				 $("#photo-col").hide().fadeIn("slow");
+				 $("#design-col").hide().delay(1000).fadeIn("slow");
+				 $("#develop-col").hide().delay(2000).fadeIn("slow");
+				}	  
+			});
 
 
-			  
+			$( '#home a' ).click(function() {
+				var link = jQuery(this).attr('href').substr(1);
+				jQuery("#"+link+"").removeClass( "invisible" ).addClass("visibile").animate({'opacity' : 1}, {queue: false, duration: 1000});
+
+				if(link === "services"){
+				 $("#photo-col").hide().fadeIn("slow");
+				 $("#design-col").hide().delay(1000).fadeIn("slow");
+				 $("#develop-col").hide().delay(2000).fadeIn("slow");
+				}	  
 			});
 
 		</script>
@@ -202,9 +280,12 @@
 				 // console.log("yessssss!");
 				$(this).siblings().removeClass("active");
 				$(this).addClass("active"); 
+
+				
 			});
 
 		</script>
+
 		
 		
 
