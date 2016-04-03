@@ -1,2 +1,4 @@
-This is a responsive portfolio website for FJMVA built using bootstrap framework
+# Portfolio-Website
+Languages: Javascript, HTML, CSS
+Framework: Bootstrap
 
